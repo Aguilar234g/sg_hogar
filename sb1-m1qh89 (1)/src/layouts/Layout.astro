@@ -1,0 +1,131 @@
+---
+// Importamos las fuentes y estilos necesarios
+import '@fontsource/poppins';
+import '@fontsource/playfair-display';
+import 'aos/dist/aos.css';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="SG HOGAR - Expertos en decoración textil para el hogar en Madrid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0843/1488/2375/files/sg_hogar_marca.png?v=1732020859" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0843/1488/2375/files/sg_hogar_marca.png?v=1732020859" sizes="16x16" />
+    <link rel="apple-touch-icon" href="https://cdn.shopify.com/s/files/1/0843/1488/2375/files/sg_hogar_marca.png?v=1732020859" />
+    <title>{title}</title>
+  </head>
+  <body class="font-poppins overflow-x-hidden w-full">
+    <slot />
+    <script>
+      import AOS from 'aos';
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        // Inicialización de las animaciones AOS
+        AOS.init({
+          duration: 800,
+          once: true,
+          offset: 100,
+          easing: 'ease-in-out'
+        });
+
+        // Implementación del scroll suave para la navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+              const headerOffset = 80;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+
+        // Sistema de detección de sección actual durante el scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('header a');
+
+        window.addEventListener('scroll', () => {
+          let current = '';
+          const headerHeight = 80;
+
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop - headerHeight - 100;
+            const sectionHeight = section.offsetHeight;
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+              current = '#' + section.getAttribute('id');
+            }
+          });
+
+          // Actualización visual del enlace activo
+          navLinks.forEach(link => {
+            link.classList.remove('text-secondary');
+            if (link.getAttribute('href') === current) {
+              link.classList.add('text-secondary');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  /* Configuración del comportamiento del scroll */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  /* Transición suave para los enlaces del menú */
+  header a {
+    transition: color 0.3s ease;
+  }
+
+  /* Ajustes para móvil */
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Asegurar que las secciones ocupen todo el ancho */
+  section {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+</style>

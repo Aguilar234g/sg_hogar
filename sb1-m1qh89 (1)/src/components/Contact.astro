@@ -1,0 +1,78 @@
+---
+// Componente de contacto - Formulario e información de contacto
+---
+
+<section id="contacto" class="py-20 bg-black text-white">
+  <div class="container mx-auto px-4">
+    <!-- Título de la sección -->
+    <h2 class="text-4xl font-playfair font-bold text-center mb-12" data-aos="fade-up">
+      Contáctanos
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Columna de información de contacto -->
+      <div data-aos="fade-right">
+        <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+        <div class="space-y-4">
+          <!-- Dirección física -->
+          <p>
+            <span class="font-bold">Dirección:</span><br/>
+            Avinguda del Textil 63 <br/>
+            Cp. 4683, Ontinyent , Valencia
+          </p>
+          <!-- Teléfono -->
+          <p>
+            <span class="font-bold">Teléfono:</span><br/>
+            +34 672 64 39 99
+          </p>
+          <!-- Email -->
+          <p>
+            <span class="font-bold">Email:</span><br/>
+            customer@sgpartners.es
+          </p>
+          <!-- Horario de atención -->
+          <p>
+            <span class="font-bold">Horario:</span><br/>
+            Lunes a Viernes: 10:00 - 14:00 y 17:00 - 20:00<br/>
+            Sábados: 10:30 - 14:00
+          </p>
+        </div>
+      </div>
+
+      <!-- Formulario de contacto -->
+      <form class="space-y-6" data-aos="fade-left">
+        <!-- Campo de nombre -->
+        <div>
+          <label class="block mb-2">Nombre</label>
+          <input 
+            type="text" 
+            class="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white"
+          />
+        </div>
+        <!-- Campo de email -->
+        <div>
+          <label class="block mb-2">Email</label>
+          <input 
+            type="email" 
+            class="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white"
+          />
+        </div>
+        <!-- Campo de mensaje -->
+        <div>
+          <label class="block mb-2">Mensaje</label>
+          <textarea 
+            rows="4" 
+            class="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:border-white"
+          ></textarea>
+        </div>
+        <!-- Botón de envío -->
+        <button 
+          type="submit" 
+          class="bg-white hover:bg-gray-100 text-black px-8 py-3 rounded-full transition-colors"
+        >
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

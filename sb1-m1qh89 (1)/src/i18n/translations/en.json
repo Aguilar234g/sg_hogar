@@ -1,0 +1,43 @@
+{
+  "header": {
+    "languages": {
+      "es": "Spanish",
+      "en": "English",
+      "ca": "Catalan",
+      "it": "Italian",
+      "fr": "French"
+    }
+  },
+  "hero": {
+    "title": "GRAMAGE",
+    "phrases": [
+      "Jacquard Fabrics",
+      "Digital Printing",
+      "Textile Design",
+      "Specialized Manufacturing",
+      "Expert Advice"
+    ],
+    "description": "Textile manufacturing experts with our own facilities. From design to final product, we create unique textile solutions.",
+    "cta": "Discover Our Production"
+  },
+  "about": {
+    "title": "Our Essence",
+    "subtitle": "We transform spaces with passion and commitment, creating environments that inspire and endure",
+    "mission": {
+      "title": "Mission",
+      "content": "We facilitate and accompany the creation of textile projects, putting our industry at the service of our partners."
+    },
+    "vision": {
+      "title": "Vision",
+      "content": "We are inspired by nature, society and culture, traditions and people's thoughts. The long-term philosophy seeks to generate joy, comfort, quality and avant-garde."
+    },
+    "values": {
+      "title": "Values",
+      "list": [
+        "We believe in people",
+        "We believe in a healthy environment",
+        "We believe that love is the future"
+      ]
+    }
+  }
+}
