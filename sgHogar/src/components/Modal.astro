@@ -1,0 +1,43 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  icon?: string;
+}
+
+const { title, description, icon } = Astro.props;
+---
+
+<div class="modal fixed inset-0 w-full h-full flex items-center justify-center opacity-0 invisible transition-all duration-300" style="z-index: 99999;">
+  <div class="modal-backdrop fixed inset-0 bg-black/75 backdrop-blur-sm"></div>
+  <div class="modal-container relative w-[90%] max-w-5xl bg-white rounded-2xl shadow-2xl">
+    {icon && (
+      <div class="absolute -top-12 left-8">
+        <div class="bg-white/10 backdrop-blur-md p-3 rounded-full">
+          <Fragment set:html={icon} />
+        </div>
+      </div>
+    )}
+    
+    <div class="p-8 md:p-12">
+      <div class="relative">
+        <h4 class="text-3xl font-bold mb-6 text-gray-800 font-playfair">{title}</h4>
+        <p class="text-gray-700 leading-relaxed text-lg max-w-4xl">{description}</p>
+      </div>
+    </div>
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-50/50 via-white to-blue-50/50 rounded-2xl opacity-50"></div>
+  </div>
+</div>
+
+<style>
+  .modal {
+    pointer-events: none;
+  }
+
+  .modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+</style>
