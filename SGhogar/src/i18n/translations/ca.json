@@ -1,0 +1,43 @@
+{
+  "header": {
+    "languages": {
+      "es": "Espanyol",
+      "en": "Anglès",
+      "ca": "Català",
+      "it": "Italià",
+      "fr": "Francès"
+    }
+  },
+  "hero": {
+    "title": "GRAMAGE",
+    "phrases": [
+      "Teixits Jacquard",
+      "Impressió Digital",
+      "Disseny Tèxtil",
+      "Fabricació Especialitzada",
+      "Assessorament Expert"
+    ],
+    "description": "Experts en fabricació tèxtil amb instal·lacions pròpies. Des del disseny fins al producte final, creem solucions tèxtils úniques.",
+    "cta": "Descobreix La Nostra Producció"
+  },
+  "about": {
+    "title": "La Nostra Essència",
+    "subtitle": "Transformem espais amb passió i compromís, creant ambients que inspiren i perduren",
+    "mission": {
+      "title": "Missió",
+      "content": "Facilitem i acompanyem la creació de projectes tèxtils, posant la nostra indústria al servei dels nostres socis."
+    },
+    "vision": {
+      "title": "Visió",
+      "content": "Ens inspirem en la natura, la societat i la cultura, en les tradicions i els pensaments de les persones. La filosofia a llarg termini busca generar alegria, confort, qualitat i avantguarda."
+    },
+    "values": {
+      "title": "Valors",
+      "list": [
+        "Creiem en les persones",
+        "Creiem en un entorn saludable",
+        "Creiem que l'amor és el futur"
+      ]
+    }
+  }
+}
