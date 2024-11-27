@@ -1,0 +1,373 @@
+---
+// [Previous imports and const declarations remain exactly the same...]
+
+const productionSections = [
+  {
+    title: "TELARES",
+    description: "18 TELARES Jacquard para tejido de 280cm, 320cm y 335cm de ancho",
+    images: [
+      {
+        url: "https://i.ibb.co/rdKxxR5/TELERS-24.jpg",
+        alt: "Telares Jacquard de última generación"
+      },
+      {
+        url: "https://i.ibb.co/0DTjQ1G/TELERS-2.jpg",
+        alt: "Proceso de tejido especializado"
+      },
+      {
+        url: "https://i.ibb.co/rGYDNt1/TELERS-3.jpg",
+        alt: "Control de calidad en telares"
+      },
+      {
+        url: "https://i.ibb.co/xM0J9Rj/SGPARTNERS-50.jpg",
+        alt: "Producción textil avanzada"
+      }
+    ]
+  },
+  {
+    title: "ESTAMPACIÓN DIGITAL",
+    description: "3 máquinas de estampación digital para todo tipo de tejidos: sinteticos y naturales hasta 320 cm de ancho",
+    images: [
+      {
+        url: "https://i.ibb.co/fdqV6km/DIGITAL-57.jpg",
+        alt: "Estampación digital de alta precisión"
+      },
+      {
+        url: "https://i.ibb.co/dcjdMNf/DIGITAL-54.jpg",
+        alt: "Proceso de estampación textil"
+      },
+      {
+        url: "https://i.ibb.co/LpbFXDK/DIGITAL-52.jpg",
+        alt: "Control de calidad en estampación"
+      },
+      {
+        url: "https://i.ibb.co/j8WKq0k/DIGITAL-33.jpg",
+        alt: "Tecnología de estampación avanzada"
+      }
+    ]
+  },
+  {
+    title: "CONFECCIÓN",
+    description: "Equipada con acolchadora, cortadora automática, planas, remalladoras y encintadoras, etc.",
+    images: [
+      {
+        url: "https://i.ibb.co/LNNv3P5/SG-CONFECCIO-2.jpg",
+        alt: "Taller de confección especializado"
+      },
+      {
+        url: "https://i.ibb.co/G0QZQ2F/SG-CONFECCIO-5.jpg",
+        alt: "Proceso de confección textil"
+      },
+      {
+        url: "https://i.ibb.co/DfTCBCn/SG-CONFECCIO-8.jpg",
+        alt: "Control de calidad en confección"
+      },
+      {
+        url: "https://i.ibb.co/LNmMLpN/SG-CONFECCIO-9.jpg",
+        alt: "Acabados de alta calidad"
+      }
+    ]
+  },
+  {
+    title: "DISEÑO",
+    description: "Departamento creativo para el desarrollo de colecciones exclusivas",
+    images: [
+      {
+        url: "https://i.ibb.co/vc4yg5Y/DISE-O-7.jpg",
+        alt: "Proceso creativo de diseño"
+      },
+      {
+        url: "https://i.ibb.co/XyKjNYm/DISE-O-6.jpg",
+        alt: "Desarrollo de patrones"
+      },
+      {
+        url: "https://i.ibb.co/6DSqSZj/DISE-O-5.jpg",
+        alt: "Diseño de colecciones"
+      },
+      {
+        url: "https://i.ibb.co/F7KHx85/DISE-O-2.jpg",
+        alt: "Innovación en diseño textil"
+      }
+    ]
+  }
+];
+
+const finishings = [
+  {
+    name: "Teñido",
+    description: "Proceso en el que se aplican colorantes al tejido para darle un color uniforme o patrones específicos, mejorando su apariencia y versatilidad."
+  },
+  {
+    name: "Estampado",
+    description: "Técnica para aplicar diseños en la superficie del tejido mediante tintas o colorantes, creando patrones decorativos y personalizados. En nuestro caso es estampación digital (más sostenible, más calidad, más flexibidad)."
+  },
+  {
+    name: "Acabado ignífugo",
+    description: "Procedimiento que aumenta la resistencia del tejido al fuego, utilizado en textiles para ropa de protección y aplicaciones industriales."
+  },
+  {
+    name: "Acabado Anti-Microbiano",
+    description: "Aplicación de sustancias que inhiben el crecimiento de microorganismos, proporcionando protección contra bacterias y hongos y alargando la vida útil del producto."
+  },
+  {
+    name: "Sanforizado",
+    description: "Tratamiento que reduce el encogimiento de los tejidos de algodón o lino."
+  },
+  {
+    name: "Calandrado",
+    description: "Procedimiento de compresión que le da al tejido un acabado liso, brillante y con mayor densidad, mejorando su aspecto y textura."
+  },
+  {
+    name: "Tratamiento antirráfagas (anti-pilling)",
+    description: 'Acabado que reduce la formación de bolitas o "pilling" en el tejido, prolongando su apariencia nueva y mejorando la calidad del producto.'
+  },
+  {
+    name: "Mercerizado",
+    description: "Tratamiento con soda cáustica aplicado a tejidos de algodón para mejorar su brillo, resistencia y capacidad de absorción de colorantes, logrando un acabado más brillante y sedoso."
+  },
+  {
+    name: "Acabado antiarrugas",
+    description: "Procedimiento que permite que los tejidos resistan las arrugas y mantengan una apariencia más lisa, facilitando el cuidado y reduciendo la necesidad de planchado."
+  },
+  {
+    name: "Acabado suave",
+    description: "Uso de agentes suavizantes para mejorar la suavidad y la sensación al tacto del tejido, aumentando su confort al contacto con la piel."
+  },
+  {
+    name: "Acabado repelente a manchas (antimanchas y/o hidrófugo)",
+    description: "Aplicación de sustancias que hacen que los tejidos sean resistentes a las manchas de líquidos o aceites, mejorando su durabilidad y apariencia en el uso diario."
+  },
+  {
+    name: "Acabado hidrófilo",
+    description: "Acabado que permite que los tejidos absorban más agua, ideal para productos de cocina tales como servilletas o paños de cocina."
+  },
+  {
+    name: "Acabado tumbler",
+    description: "Es un proceso mecanico ppara suavizar los tejidos aportando un tacto más suave y un aspecto más natural y esponjoso."
+  }
+];
+
+const products = [
+  {
+    title: "TEJIDOS",
+    description: "Jacquard o estampados, destinados a decoración, tapicería, contract, hostelería o moda."
+  },
+  {
+    title: "PRODUCTO CONFECCIONADO",
+    description: "Productos del hogar y puericultura con los más altos estándares de calidad."
+  }
+];
+
+const services = [
+  {
+    title: "DISEÑO",
+    description: "Equipo multidisciplinar para la creación de colecciones de estampados o Jacquard."
+  },
+  {
+    title: "ASESORAMIENTO",
+    description: "Equipo experto en textil para guiarte en tu proyecto y asegurar su éxito."
+  }
+];
+---
+
+<section id="produccion" class="py-12 md:py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <!-- Título principal -->
+    <div class="text-center mb-12 md:mb-16">
+      <h2 
+        class="text-4xl md:text-5xl font-playfair font-light text-gray-600 tracking-wider mb-4 md:mb-6"
+        data-aos="fade-up"
+      >
+        PRODUCCIÓN KM0
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+        Empresa local comprometida con la creación de proyectos textiles desde cero, 
+        ofreciendo tejidos y diseños de calidad y vanguardistas.
+      </p>
+    </div>
+
+    <!-- Secciones de producción -->
+    {productionSections.map((section, index) => (
+      <div class="mb-16 md:mb-32 last:mb-0">
+        <div class="text-center mb-8 md:mb-12">
+          <h3 
+            class="text-3xl md:text-4xl font-playfair tracking-wide mb-3 md:mb-4 px-4"
+            data-aos="fade-up"
+          >
+            {section.title}
+          </h3>
+          <p class="text-gray-600 max-w-3xl mx-auto px-4" data-aos="fade-up" data-aos-delay="50">
+            {section.description}
+          </p>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            {section.images.slice(0, 4).map((image, imageIndex) => (
+              <div 
+                class="relative overflow-hidden rounded-xl aspect-[4/3] sm:aspect-square group"
+                data-aos="fade-up"
+                data-aos-delay={imageIndex * 100}
+              >
+                <img
+                  src={image.url}
+                  alt={image.alt}
+                  class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300">
+                  <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                    <p class="text-white text-center text-xs sm:text-sm md:text-base px-2 sm:px-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      {image.alt}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+
+    <!-- Ennoblecimiento Textil -->
+    <div class="mt-16 md:mt-32 bg-gray-50 p-6 md:p-12 rounded-2xl mx-4">
+      <h3 class="text-2xl md:text-3xl font-playfair text-center mb-8 md:mb-12" data-aos="fade-up">
+        ENNOBLECIMIENTO TEXTIL
+      </h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Lista de ennoblecimientos -->
+        <div class="space-y-3">
+          {finishings.map((finishing, index) => (
+            <div 
+              class="group relative bg-white p-4 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
+            >
+              <div class="flex justify-between items-center">
+                <span class="text-gray-800 font-medium">{finishing.name}</span>
+                <span class="text-gray-400 md:hidden">+</span>
+              </div>
+              <!-- Mobile description (hidden by default) -->
+              <div class="mobile-description hidden mt-3 pt-3 border-t border-gray-100 text-sm text-gray-600 md:hidden">
+                {finishing.description}
+              </div>
+              <!-- Desktop hover description -->
+              <div class="description-panel opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute left-full top-0 ml-4 w-96 bg-white p-6 rounded-xl shadow-lg transition-all duration-300 z-50">
+                <h4 class="text-xl font-bold mb-3 font-playfair">{finishing.name}</h4>
+                <p class="text-gray-700 text-sm leading-relaxed">{finishing.description}</p>
+                <div class="absolute left-0 top-1/2 -translate-x-2 -translate-y-1/2 w-4 h-4 bg-white transform rotate-45"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Panel de descripción fijo (visible solo en desktop) -->
+        <div class="hidden md:block relative">
+          <div class="sticky top-24">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Productos y Servicios -->
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12 mt-16 md:mt-32 px-4">
+      <!-- Productos -->
+      <div>
+        <h3 
+          class="text-2xl md:text-3xl font-playfair mb-6 md:mb-8"
+          data-aos="fade-up"
+        >
+          PRODUCTOS
+        </h3>
+        <div class="space-y-4 md:space-y-6">
+          {products.map((product, index) => (
+            <div 
+              class="bg-white p-6 md:p-8 rounded-xl shadow-sm transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <h4 class="text-lg md:text-xl font-medium mb-2 md:mb-3">{product.title}</h4>
+              <p class="text-gray-600 text-sm md:text-base">{product.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Servicios -->
+      <div>
+        <h3 
+          class="text-2xl md:text-3xl font-playfair mb-6 md:mb-8"
+          data-aos="fade-up"
+        >
+          SERVICIOS
+        </h3>
+        <div class="space-y-4 md:space-y-6">
+          {services.map((service, index) => (
+            <div 
+              class="bg-white p-6 md:p-8 rounded-xl shadow-sm transform hover:scale-105 transition-all duration-300"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <h4 class="text-lg md:text-xl font-medium mb-2 md:mb-3">{service.title}</h4>
+              <p class="text-gray-600 text-sm md:text-base">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Mejoras de accesibilidad */
+  @media (prefers-reduced-motion: reduce) {
+    .group,
+    .description-panel,
+    .mobile-description {
+      transition: none;
+    }
+  }
+
+  /* Ajustes responsive */
+  @media (max-width: 768px) {
+    .description-panel {
+      display: none;
+    }
+  }
+
+  .sticky {
+    position: sticky;
+    top: 2rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const finishingItems = document.querySelectorAll('.group');
+
+    // Mobile functionality
+    finishingItems.forEach(item => {
+      item.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+          const mobileDesc = item.querySelector('.mobile-description');
+          const plusIcon = item.querySelector('span:last-child');
+          
+          // Cerrar todas las otras descripciones
+          finishingItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              const otherDesc = otherItem.querySelector('.mobile-description');
+              const otherIcon = otherItem.querySelector('span:last-child');
+              if (otherDesc) otherDesc.classList.add('hidden');
+              if (otherIcon) otherIcon.textContent = '+';
+            }
+          });
+
+          // Toggle descripción actual
+          if (mobileDesc && plusIcon) {
+            const isHidden = mobileDesc.classList.toggle('hidden');
+            plusIcon.textContent = isHidden ? '+' : '−';
+          }
+        }
+      });
+    });
+  });
+</script>

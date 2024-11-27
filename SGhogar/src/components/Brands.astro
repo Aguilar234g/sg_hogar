@@ -1,0 +1,126 @@
+---
+const brands = [
+  {
+    name: "Muare",
+    description: "Textil cocina",
+    logo: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/muare_marca_7a393496-09c3-447a-8ee4-b69b7ce89259.jpg?v=1732111702",
+    url: "https://muarehome.com/"
+  },
+  {
+    name: "Terracota",
+    description: "Del Mediterráneo",
+    logo: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/TERRACOTA_eb28f9b2-1073-441a-9f14-b37db241cc93.png?v=1732111733",
+    url: "https://terracotacasa.com/"
+  },
+  {
+    name: "SG Partners",
+    description: "Trend fabrics",
+    logo: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/sgpartners_logo_3e88b42c-9582-47f3-95e9-93410add60cc.jpg?v=1732111750",
+    url: "https://www.sgpartners.es/"
+  }
+];
+---
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <!-- Título de la sección -->
+    <h2 
+      class="text-3xl font-playfair text-center mb-12"
+      data-aos="fade-up"
+    >
+      Nuestras Marcas
+    </h2>
+    
+    <!-- Grid de marcas -->
+    <div 
+      class="grid grid-cols-1 sm:flex sm:flex-wrap justify-center items-stretch gap-8 sm:gap-12 md:gap-16"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      {brands.map((brand, index) => (
+        <a 
+          href={brand.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex flex-col items-center p-4 sm:p-6 rounded-lg hover:bg-gray-50 transition-all duration-300 sm:hover:scale-105"
+          data-aos="fade-up"
+          data-aos-delay={index * 100}
+          aria-label={`Visitar ${brand.name} - ${brand.description}`}
+        >
+          {/* Contenedor del logo con efecto hover */}
+          <div class="relative w-40 h-14 sm:w-48 sm:h-16 mb-4">
+            <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+            <img 
+              src={brand.logo} 
+              alt={`${brand.name} logo`}
+              class="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+              loading="lazy"
+            />
+          </div>
+          
+          {/* Descripción de la marca */}
+          <div class="text-center">
+            <span class="block text-sm sm:text-base text-gray-500 font-light tracking-wide transition-colors duration-300 group-hover:text-gray-800">
+              {brand.description}
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Efecto de escala de grises en las imágenes */
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  
+  .hover\:grayscale-0:hover {
+    filter: grayscale(0%);
+  }
+
+  /* Transiciones suaves para todos los efectos hover */
+  .group {
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Asegurar que los contenedores de logo mantengan proporciones consistentes */
+  .relative {
+    aspect-ratio: 3/1;
+  }
+
+  /* Mejora de la legibilidad del texto descriptivo */
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  /* Ajustes responsive */
+  @media (max-width: 640px) {
+    .group {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: rgba(249, 250, 251, 0.5);
+      margin-bottom: 1rem;
+    }
+    
+    .group:hover {
+      background-color: rgba(249, 250, 251, 1);
+    }
+  }
+
+  @media (min-width: 640px) {
+    .group:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  /* Mejoras de accesibilidad */
+  @media (prefers-reduced-motion: reduce) {
+    .group {
+      transition: none;
+    }
+  }
+</style>

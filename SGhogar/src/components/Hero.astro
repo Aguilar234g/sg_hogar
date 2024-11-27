@@ -1,0 +1,321 @@
+---
+// Configuración del carrusel
+const carouselImages = [
+  {
+    url: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/IMANI_924_2.jpg?v=1727254119",
+    alt: "IMANI-924-2"
+  },
+  {
+    url: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/IMANI_924_5.jpg?v=1727254148",
+    alt: "IMANI-924-5"
+  },
+  {
+    url: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/FLAVIA_924_-1_HIGH_en_tamano_grande_c72a9e3f-b8d6-4c6e-9a2a-dd54a6ecf075.jpg?v=1727253843",
+    alt: "FLAVIA-924-1"
+  },
+  {
+    url: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/AURISTELA_924-1_HIGH.jpg?v=1727937770",
+    alt: "AURISTELA-924-1"
+  },
+  {
+    url: "https://cdn.shopify.com/s/files/1/0843/1488/2375/files/GIOVANNA_924_1_HIGH.jpg?v=1727938601",
+    alt: "GIOVANNA-924-1"
+  }
+];
+
+// Frases que se mostrarán de forma dinámica
+const phrases = [
+  "Innovación Textil",
+  "Diseño Sostenible",
+  "Calidad Premium",
+  "Tecnología Avanzada",
+  "Excelencia Artesanal"
+];
+
+// Estadísticas destacadas
+const stats = [
+  { number: "19+", label: "Años de Experiencia" },
+  { number: "10+", label: "Calidades de Textil" },
+  { number: "700K+", label: "Metros de Tela al año" },
+  { number: "400k+", label: "Metros de Estampados al año" },
+  { number: "200k+", label: "Metros de Jacquard al año" },
+  { number: "200k+", label: "Metros de Tintura al año" }
+];
+---
+
+<section id="inicio" class="relative w-full min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-0">
+  <!-- Carrusel de imágenes -->
+  <div class="carousel absolute inset-0 w-full h-full">
+    {carouselImages.map((image, index) => (
+      <div 
+        class={`carousel-slide absolute inset-0 transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
+        data-index={index}
+      >
+        <img 
+          src={image.url} 
+          alt={image.alt}
+          class="w-full h-full object-cover"
+          loading={index === 0 ? "eager" : "lazy"}
+        />
+      </div>
+    ))}
+  </div>
+
+  <!-- Botones de navegación -->
+  <button 
+    class="carousel-prev absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all duration-300"
+    aria-label="Imagen anterior"
+  >
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <button 
+    class="carousel-next absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all duration-300"
+    aria-label="Imagen siguiente"
+  >
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+
+  <!-- Overlay con gradiente -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40 z-10"></div>
+
+  <!-- Contenido principal -->
+  <div class="container mx-auto px-4 relative z-20 py-12 sm:py-0">
+    <div class="flex flex-col items-center justify-center gap-6 sm:gap-8 max-w-6xl mx-auto mt-48 sm:mt-52">
+      <!-- Subtítulo dinámico -->
+      <div 
+        class="h-12 sm:h-16 md:h-20 overflow-hidden"
+        data-aos="fade-up" 
+        data-aos-delay="200"
+      >
+        <p 
+          id="dynamic-text"
+          class="hero-text text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-wide text-center"
+        ></p>
+      </div>
+
+      <!-- Descripción principal -->
+      <p 
+        class="hero-text max-w-2xl text-base sm:text-lg md:text-xl text-center px-4" 
+        data-aos="fade-up" 
+        data-aos-delay="400"
+      >
+        Transformamos la industria textil con tecnología de vanguardia y artesanía tradicional. 
+        Creamos soluciones únicas que definen el futuro del diseño textil.
+      </p>
+
+      <!-- Estadísticas -->
+      <div 
+        class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8 mt-6 sm:mt-8 px-4"
+        data-aos="fade-up"
+        data-aos-delay="600"
+      >
+        {stats.map(stat => (
+          <div class="text-center">
+            <span class="hero-text block text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">{stat.number}</span>
+            <span class="hero-text text-xs sm:text-sm md:text-base opacity-90">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+
+      <!-- CTA Buttons -->
+      <div 
+        class="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto px-4"
+        data-aos="fade-up"
+        data-aos-delay="800"
+      >
+        <a 
+          href="#produccion" 
+          class="w-full sm:w-auto px-8 py-3 bg-white text-black rounded-full hover:bg-white/90 transition-all duration-300 text-center text-sm sm:text-base"
+        >
+          Descubre Nuestra Producción
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div 
+    class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce"
+    data-aos="fade-up"
+    data-aos-delay="1000"
+  >
+    <svg 
+      class="w-6 h-6 text-white" 
+      fill="none" 
+      stroke="currentColor" 
+      viewBox="0 0 24 24"
+    >
+      <path 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        stroke-width="2" 
+        d="M19 14l-7 7m0 0l-7-7m7 7V3"
+      />
+    </svg>
+  </div>
+</section>
+
+<style>
+  .hero-text {
+    color: white;
+    text-shadow: 
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000,
+      0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  #dynamic-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  #dynamic-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .carousel-slide {
+    will-change: opacity, transform;
+  }
+
+  .carousel-slide img {
+    transform-origin: center;
+    animation: subtle-zoom 10s ease-in-out infinite alternate;
+  }
+
+  @keyframes subtle-zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+
+  section {
+    height: 100vh;
+    height: 100svh;
+  }
+
+  @media (max-width: 640px) {
+    section {
+      min-height: 100vh;
+      min-height: 100svh;
+    }
+  }
+
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%) translateX(-50%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0) translateX(-50%);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      padding-top: 4rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-slide img {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const phrases = [
+      "Innovación Textil",
+      "Diseño Sostenible",
+      "Calidad Premium",
+      "Tecnología Avanzada",
+      "Excelencia Artesanal"
+    ];
+    
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    const dynamicText = document.getElementById('dynamic-text');
+    
+    let currentSlide = 0;
+    let slideInterval;
+    const SLIDE_DURATION = 5000;
+
+    const updateCarousel = (newIndex) => {
+      slides.forEach((slide, index) => {
+        slide.classList.toggle('opacity-0', index !== newIndex);
+      });
+      currentSlide = newIndex;
+    };
+
+    const startSlideShow = () => {
+      slideInterval = setInterval(() => {
+        const nextSlide = (currentSlide + 1) % slides.length;
+        updateCarousel(nextSlide);
+      }, SLIDE_DURATION);
+    };
+
+    const resetInterval = () => {
+      clearInterval(slideInterval);
+      startSlideShow();
+    };
+
+    prevBtn?.addEventListener('click', () => {
+      const prevSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateCarousel(prevSlide);
+      resetInterval();
+    });
+
+    nextBtn?.addEventListener('click', () => {
+      const nextSlide = (currentSlide + 1) % slides.length;
+      updateCarousel(nextSlide);
+      resetInterval();
+    });
+
+    let currentPhraseIndex = 0;
+
+    const updateText = () => {
+      if (!dynamicText) return;
+      
+      dynamicText.classList.remove('visible');
+      
+      setTimeout(() => {
+        dynamicText.textContent = phrases[currentPhraseIndex];
+        dynamicText.classList.add('visible');
+        
+        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+      }, 800);
+    };
+
+    updateCarousel(0);
+    startSlideShow();
+    updateText();
+    setInterval(updateText, 4000);
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        clearInterval(slideInterval);
+      } else {
+        startSlideShow();
+      }
+    });
+  });
+</script>

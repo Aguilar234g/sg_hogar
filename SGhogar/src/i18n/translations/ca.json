@@ -1,0 +1,61 @@
+{
+  "header": {
+    "languages": {
+      "es": "Espanyol",
+      "en": "Anglès",
+      "ca": "Català",
+      "fr": "Francès"
+    }
+  },
+  "hero": {
+    "title": "GRAMAGE",
+    "phrases": {
+      "innovation": "Innovació Tèxtil",
+      "sustainability": "Disseny Sostenible",
+      "quality": "Qualitat Premium",
+      "technology": "Tecnologia Avançada",
+      "craftsmanship": "Excel·lència Artesanal"
+    },
+    "description": "Transformem la indústria tèxtil amb tecnologia d'avantguarda i artesania tradicional. Creem solucions úniques que defineixen el futur del disseny tèxtil.",
+    "cta": "Descobreix La Nostra Producció",
+    "stats": {
+      "experience": "Anys d'Experiència",
+      "qualities": "Qualitats Tèxtils",
+      "fabricMeters": "Metres de Tela a l'Any",
+      "printedMeters": "Metres Estampats",
+      "jacquardMeters": "Metres Jacquard",
+      "production": "Producció Pròpia"
+    },
+    "navigation": {
+      "previous": "Imatge anterior",
+      "next": "Imatge següent"
+    },
+    "carousel": {
+      "image1": "IMANI-924-2",
+      "image2": "IMANI-924-5",
+      "image3": "FLAVIA-924-1",
+      "image4": "AURISTELA-924-1",
+      "image5": "GIOVANNA-924-1"
+    }
+  },
+  "about": {
+    "title": "La Nostra Essència",
+    "subtitle": "Transformem espais amb passió i compromís, creant ambients que inspiren i perduren",
+    "mission": {
+      "title": "Missió",
+      "content": "Facilitem i acompanyem la creació de projectes tèxtils, posant la nostra indústria al servei dels nostres partners."
+    },
+    "vision": {
+      "title": "Visió",
+      "content": "Ens inspirem en la natura, la societat i la cultura, en les tradicions i els pensaments de les persones. La filosofia a llarg termini busca generar alegria, confort, qualitat i avantguarda."
+    },
+    "values": {
+      "title": "Valors",
+      "list": [
+        "Creiem en les persones",
+        "Creiem en un entorn saludable",
+        "Creiem que l'amor és el futur"
+      ]
+    }
+  }
+}

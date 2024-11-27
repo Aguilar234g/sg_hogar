@@ -1,0 +1,206 @@
+---
+const faqs = [
+  {
+    "question": "¿A partir de cuántos metros puedo añadir un ennoblecimiento textil específico?",
+    "answer": "Dependerá del proceso a realizar. Consulta tu proyecto con nosotros y te asesoraremos sin compromiso."
+  },
+  {
+    "question": "¿Puedo pedir el tejido cortado en 140-150 cm o cualquier otra medida?",
+    "answer": "En principio, sí. Tendremos que valorar la cantidad a cortar y el modo de realizarlo."
+  },
+  {
+    "question": "¿Puedo estampar mi propio diseño?",
+    "answer": "En principio, sí. Debemos valorar el diseño y la calidad a imprimir para darte una respuesta más concreta. Consulta sin compromiso."
+  },
+  {
+    "question": "¿Tengo un restaurante y me gustaría personalizar los manteles jacquard con mi logo, es posible?",
+    "answer": "Por supuesto, te asesoramos sin compromiso."
+  },
+  {
+    "question": "¿Soy de México y me gustan vuestras telas, pueden enviarlas a cualquier parte del mundo?",
+    "answer": "Sí, tenemos un equipo especializado en envíos internacionales."
+  },
+  {
+    "question": "¿Tengo un hotel rural de 14 habitaciones y me gustaría saber si puedo coordinar el edredón con la cortina y los cojines? También me gustaría saber si elijo unos diseños y vosotros me hacéis los edredones, cortinas y cojines.",
+    "answer": "Sí, tenemos una gran confección donde podemos acolchar y confeccionar cualquier producto."
+  },
+  {
+    "question": "¿Tenéis tejidos estampados que puedan lavarse a alta temperatura para mis restaurantes?",
+    "answer": "Sí, tenemos tejidos de poliéster mate que son ideales para hostelería. Cualquier diseño lo podemos estampar sobre estas bases, y puedes lavarlos a altas temperaturas sin que encojan ni un centímetro."
+  }
+];
+
+const contactInfo = {
+  phone: "+34 672 64 39 99",
+  phoneClean: "+34672643999",
+  email: "customer@sgpartners.es"
+};
+---
+
+<section id="faq" class="py-20 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+  <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+  
+  <div class="container mx-auto px-4 relative">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-playfair font-bold mb-6">
+        Preguntas Frecuentes
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Encuentra respuestas a las preguntas más comunes sobre nuestros servicios y productos
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="grid gap-6" data-aos="fade-up" data-aos-delay="100">
+        {faqs.map((faq, index) => (
+          <div 
+            class="faq-item bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay={index * 50}
+          >
+            <button 
+              class="faq-button w-full text-left px-6 py-4 flex items-center justify-between focus:outline-none"
+              aria-expanded="false"
+            >
+              <span class="text-lg font-medium pr-8">{faq.question}</span>
+              <span class="transform transition-transform duration-300 text-2xl opacity-70">+</span>
+            </button>
+            <div 
+              class="faq-content overflow-hidden transition-all duration-300 max-h-0"
+              style="transition: max-height 0.3s ease-out;"
+            >
+              <div class="px-6 pb-4 text-gray-600 prose prose-sm max-w-none">{faq.answer}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div 
+      class="mt-16 text-center p-8 bg-black/5 backdrop-blur-sm rounded-2xl max-w-2xl mx-auto"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <h3 class="text-xl font-medium mb-4">¿No encuentras lo que buscas?</h3>
+      <p class="text-gray-600 mb-6">
+        Nuestro equipo está aquí para ayudarte con cualquier pregunta adicional que puedas tener
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href={`tel:${contactInfo.phoneClean}`}
+          class="inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors duration-300 gap-2"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>Llamar ahora</span>
+        </a>
+        <a 
+          href={`mailto:${contactInfo.email}`}
+          class="inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors duration-300 gap-2"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span>Enviar email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-item {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .faq-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent, white 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  .faq-item:hover::before {
+    opacity: 1;
+  }
+
+  .faq-item button[aria-expanded="true"] {
+    font-weight: 600;
+    color: black;
+  }
+
+  .faq-item button[aria-expanded="true"] + div {
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .faq-item button span:last-child {
+    transition: transform 0.3s ease;
+  }
+
+  .prose {
+    line-height: 1.6;
+  }
+
+  .prose br {
+    margin-bottom: 0.5em;
+  }
+
+  .faq-item div {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .faq-item button:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+
+  .faq-item button[aria-expanded="true"] {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    let activeButton = null;
+    const buttons = document.querySelectorAll('.faq-button');
+    
+    // FAQ Functionality
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        if (activeButton && activeButton !== button) {
+          const activePanel = activeButton.nextElementSibling;
+          activeButton.setAttribute('aria-expanded', 'false');
+          activeButton.querySelector('span:last-child').style.transform = 'rotate(0deg)';
+          activePanel.style.maxHeight = '0';
+        }
+
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
+        
+        const icon = button.querySelector('span:last-child');
+        icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(45deg)';
+        
+        const panel = button.nextElementSibling;
+        if (!isExpanded) {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          activeButton = button;
+        } else {
+          panel.style.maxHeight = "0";
+          activeButton = null;
+        }
+      });
+    });
+
+    // Inicializar todos los elementos cerrados
+    const faqs = document.querySelectorAll('.faq-button');
+    faqs.forEach(faq => {
+      faq.classList.remove('active');
+    });
+  });
+</script>

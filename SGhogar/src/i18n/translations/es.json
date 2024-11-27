@@ -1,0 +1,246 @@
+{
+  "header": {
+    "languages": {
+      "es": "Español",
+      "en": "Inglés"
+    }
+  },
+  "hero": {
+    "phrases": [
+      "Innovación Textil",
+      "Diseño Sostenible",
+      "Calidad Premium",
+      "Tecnología Avanzada",
+      "Excelencia Artesanal"
+    ],
+    "description": "Transformamos la industria textil con tecnología de vanguardia y artesanía tradicional. Creamos soluciones únicas que definen el futuro del diseño textil.",
+    "cta": "Descubre Nuestra Producción",
+    "stats": [
+      { "number": "19+", "label": "Años de Experiencia" },
+      { "number": "10+", "label": "Calidades de Textil" },
+      { "number": "700K+", "label": "Metros de Tela al año" },
+      { "number": "400k+", "label": "Metros de Estampados al año" },
+      { "number": "200k+", "label": "Metros de Jacquard al año" },
+      { "number": "200k+", "label": "Metros de Tintura al año" }
+    ]
+  },
+  "brands": {
+    "title": "Nuestras Marcas",
+    "muare": {
+      "description": "Textil cocina"
+    },
+    "terracota": {
+      "description": "Del Mediterráneo"
+    },
+    "sgpartners": {
+      "description": "Trend fabrics"
+    }
+  },
+  "production": {
+    "title": "PRODUCCIÓN KM0",
+    "subtitle": "Empresa local comprometida con la creación de proyectos textiles desde cero, ofreciendo tejidos y diseños de calidad y vanguardistas.",
+    "sections": {
+      "looms": {
+        "title": "TELARES",
+        "description": "18 TELARES Jacquard para tejido de 280cm, 320cm y 335cm de ancho"
+      },
+      "printing": {
+        "title": "ESTAMPACIÓN DIGITAL",
+        "description": "3 máquinas de estampación digital para todo tipo de tejidos: sinteticos y naturales hasta 320 cm de ancho"
+      },
+      "manufacturing": {
+        "title": "CONFECCIÓN",
+        "description": "Equipada con acolchadora, cortadora automática, planas, remalladoras y encintadoras, etc."
+      },
+      "design": {
+        "title": "DISEÑO",
+        "description": "Departamento creativo para el desarrollo de colecciones exclusivas"
+      }
+    },
+    "finishings": {
+      "title": "ENNOBLECIMIENTO TEXTIL",
+      "types": {
+        "dyeing": {
+          "name": "Teñido",
+          "description": "Proceso en el que se aplican colorantes al tejido para darle un color uniforme o patrones específicos, mejorando su apariencia y versatilidad."
+        },
+        "printing": {
+          "name": "Estampado",
+          "description": "Técnica para aplicar diseños en la superficie del tejido mediante tintas o colorantes, creando patrones decorativos y personalizados. En nuestro caso es estampación digital (más sostenible, más calidad, más flexibidad)."
+        },
+        "fireproof": {
+          "name": "Acabado ignífugo",
+          "description": "Procedimiento que aumenta la resistencia del tejido al fuego, utilizado en textiles para ropa de protección y aplicaciones industriales."
+        },
+        "antimicrobial": {
+          "name": "Acabado Anti-Microbiano",
+          "description": "Aplicación de sustancias que inhiben el crecimiento de microorganismos, proporcionando protección contra bacterias y hongos y alargando la vida útil del producto."
+        },
+        "sanforized": {
+          "name": "Sanforizado",
+          "description": "Tratamiento que reduce el encogimiento de los tejidos de algodón o lino."
+        },
+        "calendering": {
+          "name": "Calandrado",
+          "description": "Procedimiento de compresión que le da al tejido un acabado liso, brillante y con mayor densidad, mejorando su aspecto y textura."
+        },
+        "antipilling": {
+          "name": "Tratamiento antirráfagas",
+          "description": "Acabado que reduce la formación de bolitas o \"pilling\" en el tejido, prolongando su apariencia nueva y mejorando la calidad del producto."
+        },
+        "mercerized": {
+          "name": "Mercerizado",
+          "description": "Tratamiento con soda cáustica aplicado a tejidos de algodón para mejorar su brillo, resistencia y capacidad de absorción de colorantes, logrando un acabado más brillante y sedoso."
+        },
+        "wrinkleresistant": {
+          "name": "Acabado antiarrugas",
+          "description": "Procedimiento que permite que los tejidos resistan las arrugas y mantengan una apariencia más lisa, facilitando el cuidado y reduciendo la necesidad de planchado."
+        },
+        "softfinish": {
+          "name": "Acabado suave",
+          "description": "Uso de agentes suavizantes para mejorar la suavidad y la sensación al tacto del tejido, aumentando su confort al contacto con la piel."
+        },
+        "stainresistant": {
+          "name": "Acabado repelente a manchas",
+          "description": "Aplicación de sustancias que hacen que los tejidos sean resistentes a las manchas de líquidos o aceites, mejorando su durabilidad y apariencia en el uso diario."
+        },
+        "hydrophilic": {
+          "name": "Acabado hidrófilo",
+          "description": "Acabado que permite que los tejidos absorban más agua, ideal para productos de cocina tales como servilletas o paños de cocina."
+        },
+        "tumbler": {
+          "name": "Acabado tumbler",
+          "description": "Es un proceso mecanico para suavizar los tejidos aportando un tacto más suave y un aspecto más natural y esponjoso."
+        }
+      }
+    },
+    "products": {
+      "title": "PRODUCTOS",
+      "items": {
+        "fabrics": {
+          "title": "TEJIDOS",
+          "description": "Jacquard o estampados, destinados a decoración, tapicería, contract, hostelería o moda."
+        },
+        "manufactured": {
+          "title": "PRODUCTO CONFECCIONADO",
+          "description": "Productos del hogar y puericultura con los más altos estándares de calidad."
+        }
+      }
+    },
+    "services": {
+      "title": "SERVICIOS",
+      "items": {
+        "design": {
+          "title": "DISEÑO",
+          "description": "Equipo multidisciplinar para la creación de colecciones de estampados o Jacquard."
+        },
+        "consulting": {
+          "title": "ASESORAMIENTO",
+          "description": "Equipo experto en textil para guiarte en tu proyecto y asegurar su éxito."
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "Nuestra Esencia",
+    "subtitle": "Transformamos espacios con pasión y compromiso, creando ambientes que inspiran y perduran",
+    "mission": {
+      "title": "Misión",
+      "content": "Facilitamos y acompañamos la creación de proyectos textiles, poniendo nuestra industria al servicio de nuestros partners."
+    },
+    "vision": {
+      "title": "Visión",
+      "content": "Nos inspiramos en la naturaleza, la sociedad y la cultura, en las tradiciones y los pensamientos de las personas. La filosofia a largo plazo busca generar alegría, confort, calidad y vanguardia."
+    },
+    "values": {
+      "title": "Valores",
+      "list": [
+        "Creemos en las personas",
+        "Creemos en un entorno saludable",
+        "Creemos que el amor es el futuro"
+      ]
+    },
+    "stats": {
+      "experience": "19+ Años de Experiencia",
+      "projects": "2000+ Proyectos Realizados"
+    }
+  },
+  "testimonials": {
+    "title": "¿Qué piensan nuestros clientes?",
+    "items": [
+      {
+        "name": "Javier Gonzalez",
+        "content": "La rapidez con la que nos han captado nuestra idea ha sido fundamental para sacar adelante el proyecto. He trabajado con varias empresas textil pero me quedo en SG por su capacidad de innovación en el diseño.",
+        "highlight": "capacidad de innovación en el diseño"
+      },
+      {
+        "name": "Matias Ferrero",
+        "content": "Conozco la empresa desde hace más de 10 años. El cambio que han hecho ha sido brutal. Cuando les conocí eran una comercial y ahora son una industria vertical. Qué capacidad de crecimiento.",
+        "highlight": "El cambio que han hecho ha sido brutal"
+      },
+      {
+        "name": "Patricia Salas",
+        "content": "Hace años trabajé con SG pero no me convencieron. Hace unos meses decidí volver a probar por insistencia comercial y la verdad que es alucinante. La capacidad de diseño y la calidad de la estampación es excepcional. Diseñamos dibujos pequeños y el detalle de la estampación es extraordinario.",
+        "highlight": "la calidad de la estampación es excepcional"
+      },
+      {
+        "name": "Alessandro Corvo",
+        "content": "Son una empresa excepcional, se nota que detrás hay un equipo joven.",
+        "highlight": "empresa excepcional"
+      },
+      {
+        "name": "Angelo Letto",
+        "content": "Desde que trabajamos con SG vendemos más, son muy flexibles con la cantidad de metros en las piezas y tienen una capacidad enorme de crear nuevas colecciones.",
+        "highlight": "capacidad enorme de crear nuevas colecciones"
+      },
+      {
+        "name": "Allan Ker",
+        "content": "Lo más bonito de trabajar con SG es que les presentas la idea y se encargan de todo. Tienen toda la maquinaria necesaria para nuestros proyectos.",
+        "highlight": "se encargan de todo"
+      },
+      {
+        "name": "Tomas Velasco",
+        "content": "Tener una fábrica en España de estas características es una suerte para los que tenemos tiendas de decoración. Podemos ofrecer servicios que para los importadores sería impensable.",
+        "highlight": "Podemos ofrecer servicios que para los importadores sería impensable"
+      },
+      {
+        "name": "Juan Miguel",
+        "content": "El diseño que tienen es alucinante, cada día me sorprenden.",
+        "highlight": "cada día me sorprenden"
+      },
+      {
+        "name": "Marco Frias",
+        "content": "Para mí trabajar con SG significa calidad, diseño, innovación a un precio justo.",
+        "highlight": "calidad, diseño, innovación a un precio justo"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "button": "¿Hablamos?",
+    "modal": {
+      "title": "¿Cómo prefieres contactarnos?",
+      "phone": "Llamar ahora",
+      "email": "Enviar email",
+      "schedule": "Lunes a Viernes: 10:00 - 14:00 y 17:00 - 20:00"
+    }
+  },
+  "footer": {
+    "legal": {
+      "title": "Legal",
+      "links": {
+        "terms": "Aviso Legal",
+        "privacy": "Política de Privacidad",
+        "cookies": "Política de Cookies"
+      }
+    },
+    "social": {
+      "title": "Síguenos"
+    },
+    "copyright": "Todos los derechos reservados.",
+    "cookies": {
+      "notice": "Este sitio web utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra",
+      "link": "Política de Cookies"
+    }
+  }
+}

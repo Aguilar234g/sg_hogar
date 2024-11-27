@@ -1,0 +1,246 @@
+{
+  "header": {
+    "languages": {
+      "es": "Spanish",
+      "en": "English"
+    }
+  },
+  "hero": {
+    "phrases": [
+      "Textile Innovation",
+      "Sustainable Design",
+      "Premium Quality",
+      "Advanced Technology",
+      "Artisanal Excellence"
+    ],
+    "description": "We transform the textile industry with cutting-edge technology and traditional craftsmanship. We create unique solutions that define the future of textile design.",
+    "cta": "Discover Our Production",
+    "stats": [
+      { "number": "19+", "label": "Years of Experience" },
+      { "number": "10+", "label": "Textile Qualities" },
+      { "number": "700K+", "label": "Fabric Meters per Year" },
+      { "number": "400k+", "label": "Printed Meters per Year" },
+      { "number": "200k+", "label": "Jacquard Meters per Year" },
+      { "number": "200k+", "label": "Dyeing Meters per Year" }
+    ]
+  },
+  "brands": {
+    "title": "Our Brands",
+    "muare": {
+      "description": "Kitchen Textile"
+    },
+    "terracota": {
+      "description": "From Mediterranean"
+    },
+    "sgpartners": {
+      "description": "Trend fabrics"
+    }
+  },
+  "production": {
+    "title": "KM0 PRODUCTION",
+    "subtitle": "Local company committed to creating textile projects from scratch, offering quality and avant-garde fabrics and designs.",
+    "sections": {
+      "looms": {
+        "title": "LOOMS",
+        "description": "18 Jacquard looms for fabric widths of 280cm, 320cm, and 335cm"
+      },
+      "printing": {
+        "title": "DIGITAL PRINTING",
+        "description": "3 digital printing machines for all types of fabrics: synthetic and natural up to 320 cm wide"
+      },
+      "manufacturing": {
+        "title": "MANUFACTURING",
+        "description": "Equipped with quilting machine, automatic cutter, flat machines, overlock machines, and taping machines, etc."
+      },
+      "design": {
+        "title": "DESIGN",
+        "description": "Creative department for exclusive collection development"
+      }
+    },
+    "finishings": {
+      "title": "TEXTILE FINISHING",
+      "types": {
+        "dyeing": {
+          "name": "Dyeing",
+          "description": "Process where dyes are applied to the fabric to give it a uniform color or specific patterns, improving its appearance and versatility."
+        },
+        "printing": {
+          "name": "Printing",
+          "description": "Technique for applying designs to the fabric surface using inks or dyes, creating decorative and personalized patterns. In our case, it's digital printing (more sustainable, better quality, more flexibility)."
+        },
+        "fireproof": {
+          "name": "Fireproof Finishing",
+          "description": "Process that increases fabric resistance to fire, used in textiles for protective clothing and industrial applications."
+        },
+        "antimicrobial": {
+          "name": "Anti-Microbial Finishing",
+          "description": "Application of substances that inhibit microorganism growth, providing protection against bacteria and fungi and extending product life."
+        },
+        "sanforized": {
+          "name": "Sanforized",
+          "description": "Treatment that reduces shrinkage in cotton or linen fabrics."
+        },
+        "calendering": {
+          "name": "Calendering",
+          "description": "Compression procedure that gives the fabric a smooth, shiny finish with greater density, improving its appearance and texture."
+        },
+        "antipilling": {
+          "name": "Anti-pilling Treatment",
+          "description": "Finish that reduces the formation of pills on the fabric, prolonging its new appearance and improving product quality."
+        },
+        "mercerized": {
+          "name": "Mercerized",
+          "description": "Caustic soda treatment applied to cotton fabrics to improve their shine, strength, and dye absorption capacity, achieving a more shiny and silky finish."
+        },
+        "wrinkleresistant": {
+          "name": "Wrinkle-resistant Finish",
+          "description": "Process that allows fabrics to resist wrinkles and maintain a smoother appearance, facilitating care and reducing the need for ironing."
+        },
+        "softfinish": {
+          "name": "Soft Finish",
+          "description": "Use of softening agents to improve fabric softness and feel, increasing comfort when in contact with skin."
+        },
+        "stainresistant": {
+          "name": "Stain-resistant Finish",
+          "description": "Application of substances that make fabrics resistant to liquid or oil stains, improving their durability and appearance in daily use."
+        },
+        "hydrophilic": {
+          "name": "Hydrophilic Finish",
+          "description": "Finish that allows fabrics to absorb more water, ideal for kitchen products such as napkins or kitchen towels."
+        },
+        "tumbler": {
+          "name": "Tumbler Finish",
+          "description": "A mechanical process to soften fabrics, providing a softer touch and a more natural and fluffy appearance."
+        }
+      }
+    },
+    "products": {
+      "title": "PRODUCTS",
+      "items": {
+        "fabrics": {
+          "title": "FABRICS",
+          "description": "Jacquard or printed, for decoration, upholstery, contract, hospitality, or fashion."
+        },
+        "manufactured": {
+          "title": "MANUFACTURED PRODUCT",
+          "description": "Home and childcare products with the highest quality standards."
+        }
+      }
+    },
+    "services": {
+      "title": "SERVICES",
+      "items": {
+        "design": {
+          "title": "DESIGN",
+          "description": "Multidisciplinary team for creating print or Jacquard collections."
+        },
+        "consulting": {
+          "title": "CONSULTING",
+          "description": "Expert textile team to guide you in your project and ensure its success."
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "Our Essence",
+    "subtitle": "We transform spaces with passion and commitment, creating environments that inspire and endure",
+    "mission": {
+      "title": "Mission",
+      "content": "We facilitate and accompany the creation of textile projects, putting our industry at the service of our partners."
+    },
+    "vision": {
+      "title": "Vision",
+      "content": "We are inspired by nature, society and culture, traditions and people's thoughts. The long-term philosophy seeks to generate joy, comfort, quality and avant-garde."
+    },
+    "values": {
+      "title": "Values",
+      "list": [
+        "We believe in people",
+        "We believe in a healthy environment",
+        "We believe that love is the future"
+      ]
+    },
+    "stats": {
+      "experience": "19+ Years of Experience",
+      "projects": "2000+ Completed Projects"
+    }
+  },
+  "testimonials": {
+    "title": "What do our clients think?",
+    "items": [
+      {
+        "name": "Javier Gonzalez",
+        "content": "The speed with which they captured our idea was fundamental to moving the project forward. I've worked with several textile companies but I stay with SG for their innovation capacity in design.",
+        "highlight": "innovation capacity in design"
+      },
+      {
+        "name": "Matias Ferrero",
+        "content": "I've known the company for over 10 years. The change they've made has been incredible. When I met them, they were a commercial company, and now they're a vertical industry. What growth capacity.",
+        "highlight": "The change they've made has been incredible"
+      },
+      {
+        "name": "Patricia Salas",
+        "content": "Years ago I worked with SG but wasn't convinced. A few months ago I decided to try again due to commercial insistence and it's truly amazing. The design capacity and printing quality is exceptional. We design small patterns and the printing detail is extraordinary.",
+        "highlight": "printing quality is exceptional"
+      },
+      {
+        "name": "Alessandro Corvo",
+        "content": "They are an exceptional company, you can tell there's a young team behind it.",
+        "highlight": "exceptional company"
+      },
+      {
+        "name": "Angelo Letto",
+        "content": "Since working with SG we sell more, they are very flexible with the quantity of meters in pieces and have an enormous capacity to create new collections.",
+        "highlight": "enormous capacity to create new collections"
+      },
+      {
+        "name": "Allan Ker",
+        "content": "The best thing about working with SG is that you present them with the idea and they take care of everything. They have all the necessary machinery for our projects.",
+        "highlight": "they take care of everything"
+      },
+      {
+        "name": "Tomas Velasco",
+        "content": "Having a factory in Spain with these characteristics is lucky for those of us who have decoration stores. We can offer services that would be unthinkable for importers.",
+        "highlight": "We can offer services that would be unthinkable for importers"
+      },
+      {
+        "name": "Juan Miguel",
+        "content": "Their design is amazing, they surprise me every day.",
+        "highlight": "they surprise me every day"
+      },
+      {
+        "name": "Marco Frias",
+        "content": "For me, working with SG means quality, design, innovation at a fair price.",
+        "highlight": "quality, design, innovation at a fair price"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "button": "Shall we talk?",
+    "modal": {
+      "title": "How would you prefer to contact us?",
+      "phone": "Call now",
+      "email": "Send email",
+      "schedule": "Monday to Friday: 10:00 - 14:00 and 17:00 - 20:00"
+    }
+  },
+  "footer": {
+    "legal": {
+      "title": "Legal",
+      "links": {
+        "terms": "Legal Notice",
+        "privacy": "Privacy Policy",
+        "cookies": "Cookies Policy"
+      }
+    },
+    "social": {
+      "title": "Follow us"
+    },
+    "copyright": "All rights reserved.",
+    "cookies": {
+      "notice": "This website uses cookies to improve your experience. By continuing to browse, you accept our",
+      "link": "Cookies Policy"
+    }
+  }
+}
